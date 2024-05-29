@@ -1986,6 +1986,8 @@ void plist_print(plist_t plist)
      plist_write_to_stream(plist, stdout, PLIST_FORMAT_PRINT, PLIST_OPT_PARTIAL_DATA);
 }
 
+#define PACKAGE_VERSION "2.6.0"
+
 const char* libplist_version()
 {
 #ifndef PACKAGE_VERSION

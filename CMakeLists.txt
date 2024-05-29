@@ -7,7 +7,7 @@ project(plist)
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Android")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O2 -g  -fno-strict-aliasing  -D_GNU_SOURCE  -DHAVE_IPV6  -DHAVE_LINUX  -DNOT_HAVE_SA_LEN  -DPLATFORM_NO_RLIMIT  -DTARGET_OS_LINUX  -DUSES_NETLINK  -DMDNS_DEBUGMSGS=0 -W  -Wall  -Wextra  -Wno-array-bounds  -Wno-pointer-sign  -Wno-unused  -Wno-unused-parameter  -Werror=implicit-function-declaration")
-add_definitions(-DUSE_TCP_LOOPBACK )
+add_definitions(-DHAVE_STRNDUP )
 endif()
 
 #
